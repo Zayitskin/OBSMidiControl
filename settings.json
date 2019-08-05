@@ -1,0 +1,18 @@
+[
+	{
+		"key": "note_on",
+		"value": 60,
+		"command": {
+			"type": "toggle",
+			"target": "Display Capture"
+		}
+	},
+	{
+		"key": "note_on",
+		"value": 61,
+		"command": {
+			"type": "transition",
+			"target": "Scene 2"
+		}
+	}
+]
