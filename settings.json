@@ -1,18 +1,21 @@
-[
-	{
+[{
 		"key": "note_on",
 		"value": 60,
-		"command": {
+		"commands": [{
 			"type": "toggle",
 			"target": "Display Capture"
-		}
+		},
+		{
+			"type": "toggle",
+			"target": "Text"
+		}]
 	},
 	{
 		"key": "note_on",
 		"value": 61,
-		"command": {
+		"commands": [{
 			"type": "transition",
 			"target": "Scene 2"
-		}
+		}]
 	}
 ]
