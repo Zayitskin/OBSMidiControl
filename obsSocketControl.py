@@ -26,7 +26,7 @@ def script_update(settings):
                     config[obj["key"]] = {obj["value"]: []}
                 elif obj["value"] not in config[obj["key"]].keys():
                     config[obj["key"]][obj["value"]] = []
-                config[obj["key"]][obj["value"]].append(obj["command"])
+                config[obj["key"]][obj["value"]].extend(obj["commands"])
             print(config)
 
 def script_unload():
