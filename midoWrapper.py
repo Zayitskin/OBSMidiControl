@@ -1,6 +1,3 @@
-import mido
-import signal
-
 def closePort(signum, stackframe):
     port.close()
 
@@ -10,6 +7,8 @@ def pack(msg):
     return data["type"] + " " + data["value"]
 
 def midiControl(q, target = None):
+    import mido
+    import signal
     global port
 
     VALID_MESSAGE_TYPES = ["note_on", "note_off"]
